@@ -1,0 +1,28 @@
+footer{
+  height: 15vh;
+  background: rgb(146,140,229);
+  background: linear-gradient(20deg, rgba(146,140,229,1) 0%, rgba(101,175,229,1) 24%, rgba(92,182,229,0.969625350140056) 46%, rgba(107,120,221,1) 100%);
+  ; 
+}
+footer ul{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+
+}
+footer ul li{
+  list-style: none;
+}
+
+footer ul li a{
+  color: #000;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+footer img{
+  max-width: 100px;
+}
