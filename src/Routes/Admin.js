@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react"
 import {
-    Switch,
+    Routes,
     Route,
     Redirect
   } from "react-router-dom"
@@ -15,15 +15,15 @@ function Admin (){
     return(
         <>
             <Menu />
-            <Switch>
-            <Redirect path="/home" to="/"/>
-            <Route path="/" exact>
-                <Home />
-            </Route>
-            <Route path="*">
-                <NotFound />
-            </Route>
-            </Switch>
+                <Routes>
+                    <Redirect path="/home" to="/"/>
+                    <Route path="/" exact>
+                        <Home />
+                    </Route>
+                    <Route path="*">
+                        <NotFound />
+                    </Route>
+                </Routes>
             <Footer />
         </>
     )

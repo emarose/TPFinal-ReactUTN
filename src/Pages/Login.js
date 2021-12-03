@@ -7,6 +7,16 @@ import AuthContext from "../Context/AuthContext";
 import { useNavigate } from 'react-router-dom';
 
 function Login (){
+    const styles = {
+        loginWrapper: {
+            display: "flex",
+            height:"68vh",
+            alignItems:"center",
+            justifyContent:"center"
+        }
+    };
+
+
     const navigate = useNavigate();
     //console.log(firebase.db)
     const { register, handleSubmit,formState:{errors} } = useForm();
@@ -30,11 +40,9 @@ function Login (){
             console.log("error",e)
             setLoading(false)
         }
-        
     }
-    
     return(
-        <div>
+        <div style={styles.loginWrapper}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 
                 <FormGroup label="Email" type="email" register={{...register("email",{required:true})}}  />

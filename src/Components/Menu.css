@@ -2,10 +2,15 @@ nav img{
   margin:0 1em;
   max-width: 150px;
 }
+nav{
+  margin:0 !important;
+  padding: 0 !important;
+}
 
 #salir{
   letter-spacing: 1px;
-  background-color: #9193e6;
+  background: rgb(146,140,229);
+  background: linear-gradient(204deg, rgba(146,140,229,1) 0%, rgba(101,175,229,1) 24%, rgba(92,182,229,0.969625350140056) 46%, rgba(107,120,221,1) 100%);
   color: #fff;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -13,6 +18,10 @@ nav img{
   border-radius: 10px;
   position: absolute;
   right: 50px;
+}
+#salir:hover{
+  cursor: pointer;
+  background: linear-gradient(-180deg, rgba(146,140,229,1) 0%, rgba(101,175,229,1) 24%, rgba(92,182,229,0.969625350140056) 46%, rgba(107,120,221,1) 100%);
 }
 
 .greeting{

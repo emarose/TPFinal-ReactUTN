@@ -23,7 +23,7 @@ function Producto(props) {
   return (
     <AuthContext.Consumer>
       {(context) => (
-        <Card style={{ width: "16rem" }} className="card">
+        <Card style={{ width: "18rem" }} className="h-100 card">
           <Card.Body>
             <Card.Title>{datos.title}</Card.Title>
             <hr />

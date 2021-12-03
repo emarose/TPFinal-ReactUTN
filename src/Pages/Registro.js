@@ -6,6 +6,15 @@ import ButtonWithLoading from "../Components/ButtonWithLoading";
 import AlertCustom from "../Components/AlertCustom";
 
 function Registro (){
+const styles = {
+    formWrapper: {
+        display: "flex",
+        height:"68vh",
+        alignItems:"center",
+        justifyContent:"center"
+    }
+};
+
     //console.log(firebase.db)
     const { register, handleSubmit,formState:{errors} } = useForm();
     const [loading,setLoading] = useState(false);
@@ -37,8 +46,8 @@ function Registro (){
         
     }
     return(
-        <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+        <div style={styles.formWrapper}>
+            <form onSubmit={handleSubmit(onSubmit)} >
                 <FormGroup label="Nombre" register={{...register("nombre",{required:true})}}  />
                 {errors.nombre && <span>El campo es obligatorio</span>}
                 <FormGroup label="Apellido" register={{...register("apellido",{required:true})}}  />
