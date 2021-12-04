@@ -1,4 +1,4 @@
-Proyecto de eCommerce utilizando ReactJS y Firebase.
+⭐ Proyecto de eCommerce utilizando ReactJS y Firebase.
 
 Dependencias:
 * React Bootstrap
@@ -6,5 +6,6 @@ Dependencias:
 * Axios
 * React Icons
 
+🚀 Deploy: https://proyecto1-4ce94.web.app/
 
 Emanuel Ignacio Amerio 2021
